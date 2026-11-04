@@ -29,5 +29,11 @@ plt.show()
 
 # %%
 # Cell 3: Save for the Final Report (Crucial!)
+# Cell 3: Save for the Final Report (Crucial!)
+from pathlib import Path
+Path("phishing/reports").mkdir(parents=True, exist_ok=True)  # <-- ADD THIS LINE
+
 plt.savefig('phishing/reports/confusion_matrices.png', dpi=300, bbox_inches='tight')
 print("Saved to phishing/reports/confusion_matrices.png")
+
+# %%

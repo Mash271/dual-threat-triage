@@ -23,13 +23,18 @@ _, X_te_urls, _, y_te = train_test_split(X_urls, y, test_size=0.2, stratify=y, r
 print("Extracting features for test set...")
 X_te_feats = pd.DataFrame(X_te_urls.apply(extract_features).tolist())
 
+# Extract features for the test set
+print("Extracting features for test set...")
+X_te_feats = pd.DataFrame(X_te_urls.apply(extract_features).tolist())
+X_te_feats = X_te_feats.reset_index(drop=True) # <--- ADD THIS LINE
+
 # Predict
 y_pred = rf.predict(X_te_feats)
 
 # Find False Negatives (Actual = 1 [Phishing], Predicted = 0 [Legit])
 fn_mask = (y_te == 1) & (y_pred == 0)
 fn_urls = X_te_urls[fn_mask].values
-fn_feats = X_te_feats[fn_mask]
+fn_feats = X_te_feats[fn_mask.values]
 
 print(f"\nFound {len(fn_urls)} False Negatives. Here are the first 5:\n")
 for i in range(min(5, len(fn_urls))):

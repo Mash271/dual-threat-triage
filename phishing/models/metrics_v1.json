@@ -1,0 +1,20 @@
+{
+  "random_forest": {
+    "accuracy": 0.9941666666666666,
+    "precision_phishing": 0.9976368649074439,
+    "recall_phishing": 0.9886807181889149,
+    "f1_phishing": 0.993138600274456,
+    "roc_auc": 0.9964453399780839
+  },
+  "logistic_regression": {
+    "accuracy": 0.9808333333333333,
+    "precision_phishing": 0.9931479242241031,
+    "recall_phishing": 0.9617486338797814,
+    "f1_phishing": 0.9771961134245489,
+    "roc_auc": 0.9934111634716732
+  },
+  "cv_recall_mean": 0.989951219512195,
+  "cv_recall_std": 0.0022796724771800845,
+  "train_rows": 24000,
+  "test_rows": 6000
+}

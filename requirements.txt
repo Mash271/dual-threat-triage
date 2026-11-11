@@ -6,3 +6,5 @@ shap>=0.44
 plotly>=5.18
 matplotlib>=3.8
 pytest>=7.4
+seaborn>=0.13
+joblib>=1.3

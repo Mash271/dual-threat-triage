@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import shap
 from pathlib import Path
-from features import extract_features
+from .features import extract_features
 
 # 1. Setup paths and load the trained brain
 BASE = Path(__file__).resolve().parent

@@ -9,7 +9,7 @@ st.title("🛡️ Dual-Threat Triage System")
 st.markdown("An Explainable ML System for CVE Prioritization and Zero-Day Phishing Detection.")
 
 # Create Tabs (Placeholder for Aiman's CVE tab later)
-tab_phishing, tab_cve = st.tabs(["🎣 Phishing Detector", "🐛 CVE Triage (Coming Soon)"])
+tab_phishing, tab_cve = st.tabs([" Phishing Detector", " CVE Triage (Coming Soon)"])
 
 # Render your half in the first tab
 with tab_phishing:

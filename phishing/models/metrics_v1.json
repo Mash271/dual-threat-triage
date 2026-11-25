@@ -1,20 +1,35 @@
 {
   "random_forest": {
-    "accuracy": 0.9941666666666666,
-    "precision_phishing": 0.9976368649074439,
-    "recall_phishing": 0.9886807181889149,
-    "f1_phishing": 0.993138600274456,
-    "roc_auc": 0.9964453399780839
+    "accuracy": 0.989,
+    "precision_phishing": 0.9897959183673469,
+    "recall_phishing": 0.9843871975019516,
+    "f1_phishing": 0.9870841487279843,
+    "roc_auc": 0.995598567963601
   },
   "logistic_regression": {
-    "accuracy": 0.9808333333333333,
-    "precision_phishing": 0.9931479242241031,
-    "recall_phishing": 0.9617486338797814,
-    "f1_phishing": 0.9771961134245489,
-    "roc_auc": 0.9934111634716732
+    "accuracy": 0.8673333333333333,
+    "precision_phishing": 0.935404339250493,
+    "recall_phishing": 0.7404371584699454,
+    "f1_phishing": 0.8265795206971678,
+    "roc_auc": 0.9548234045809361
   },
-  "cv_recall_mean": 0.989951219512195,
-  "cv_recall_std": 0.0022796724771800845,
+  "cv_recall_mean": 0.9844878048780487,
+  "cv_recall_std": 0.000839251245565135,
   "train_rows": 24000,
-  "test_rows": 6000
+  "test_rows": 6000,
+  "features": [
+    "url_length",
+    "domain_length",
+    "path_length",
+    "query_length",
+    "num_dots",
+    "num_hyphens",
+    "num_at_signs",
+    "digit_ratio",
+    "has_ip_address",
+    "num_subdomains",
+    "uses_url_shortener",
+    "suspicious_keyword_count",
+    "special_char_ratio"
+  ]
 }
